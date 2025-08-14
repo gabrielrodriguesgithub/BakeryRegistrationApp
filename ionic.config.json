@@ -1,0 +1,7 @@
+{
+  "name": "BakeryApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

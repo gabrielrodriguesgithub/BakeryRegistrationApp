@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button (click)="logout()">Sair</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Suas Padarias</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content>
+  <div class="divButtonOrdenate">
+    <ion-button class="buttonOrdenate" (click)="getLocation()">Ordenar padarias por distancia</ion-button>
+  </div>
+  <ion-list *ngIf="!loading && bakeries.length">
+    <ion-item *ngFor="let bakery of bakeries">
+      <ion-label>
+        <h2>{{ bakery.name }}</h2>
+        <p>{{ bakery.addressStreet }}, {{ bakery.addressNumber }}</p>
+        <p>{{ bakery.city }} - {{ bakery.state }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-text *ngIf="loading">Carregando...</ion-text>
+  <ion-text color="danger" *ngIf="error">{{ error }}</ion-text>
+  <ion-text *ngIf="!loading && bakeries.length === 0">Nenhuma padaria encontrada.</ion-text>
+</ion-content>

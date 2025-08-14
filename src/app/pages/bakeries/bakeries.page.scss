@@ -1,0 +1,64 @@
+ion-toolbar {
+  --background: #6d4c41; 
+  --color: #fff; 
+}
+
+ion-title {
+  text-align: center;
+  font-weight: bold;
+}
+
+ion-buttons {
+  --color: #ffb74d; 
+}
+ion-content {
+  --background: #fdf5e6; 
+}
+
+ion-list {
+  background: transparent; 
+  padding: 15px;
+}
+
+ion-item {
+  --background: #fff; 
+  --border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); 
+  margin-bottom: 12px; 
+}
+
+ion-label {
+  padding: 10px 0; 
+}
+
+ion-label h2 {
+  font-weight: bold;
+  color: #3e2723; 
+}
+
+ion-label p {
+  color: #6d4c41; 
+  font-size: 0.9em;
+}
+
+ion-text {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #6d4c41;
+}
+
+ion-text[color="danger"] {
+  color: #d32f2f; 
+}
+
+.buttonOrdenate {
+    width: 50%;
+    color: white;
+    --background: #6d4c41;
+}
+
+.divButtonOrdenate {
+    display: flex;
+    justify-content: center;
+}
